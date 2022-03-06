@@ -15,6 +15,10 @@ namespace Regex_UserRegistration
             Console.WriteLine("Enter valid first name : ");
             string firstName = Console.ReadLine();
             validateUserRegistration.ValidateFirstName(firstName);
+
+            Console.WriteLine("Enter valid last name : ");
+            string lastName = Console.ReadLine();
+            validateUserRegistration.ValidateLastName(lastName);
             Console.ReadLine();
         }
     }
