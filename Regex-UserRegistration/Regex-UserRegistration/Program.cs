@@ -41,9 +41,11 @@ namespace Regex_UserRegistration
             string password3 = Console.ReadLine();  
             validateUserRegistration.ValidaePassword3(password3);*/
 
-            Console.WriteLine("Enter password with atleast one special character: ");
+            /*Console.WriteLine("Enter password with atleast one special character: ");
             string password4 = Console.ReadLine();
-            validateUserRegistration.ValidatePassword4(password4);
+            validateUserRegistration.ValidatePassword4(password4);*/
+
+            validateUserRegistration.ValidateSample();
             Console.ReadLine();
         }
     }

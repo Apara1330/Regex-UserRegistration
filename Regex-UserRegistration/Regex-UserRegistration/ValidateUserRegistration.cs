@@ -19,6 +19,12 @@ namespace Regex_UserRegistration
         public const string PASSWORD_RULE4 = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$";
 
 
+        //Declaring Array
+        public string[] sample = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc-100@abc.net", "abc.100@abc.com.au",
+                 "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" ,"abc","abc@.com","abc123@gmail.a", "abc123@.com" ,
+                 "abc123@.com.com",".abc@abc.com","abc()*@gmail.com","abc@%*.com","abc.@gmail.com","abc@abc@gmail.com","abc@gmail.com.1a"};
+
+
         public void ValidateFirstName(string firstName)
         {
             Regex regex = new Regex(First_Name);
@@ -126,6 +132,22 @@ namespace Regex_UserRegistration
             else
             {
                 Console.WriteLine("Password does not match with the pattern");
+            }
+        }
+
+        public void ValidateSample()
+        {
+            Regex regex = new Regex(Email);
+            for(int i = 0; i< sample.Length; i++)
+            {
+                if (regex.IsMatch((string)sample[i]))
+                {
+                    Console.WriteLine(sample[i]+" It is Valid");
+                }
+                else
+                {
+                    Console.WriteLine(sample[i] + "It is Invalid");
+                }
             }
         }
 
