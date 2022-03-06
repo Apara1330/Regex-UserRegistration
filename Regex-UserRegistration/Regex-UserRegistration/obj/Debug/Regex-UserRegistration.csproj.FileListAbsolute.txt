@@ -1,0 +1,8 @@
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\bin\Debug\Regex-UserRegistration.exe.config
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\bin\Debug\Regex-UserRegistration.exe
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\bin\Debug\Regex-UserRegistration.pdb
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\obj\Debug\Regex-UserRegistration.csproj.AssemblyReference.cache
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\obj\Debug\Regex-UserRegistration.csproj.SuggestedBindingRedirects.cache
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\obj\Debug\Regex-UserRegistration.csproj.CoreCompileInputs.cache
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\obj\Debug\Regex-UserRegistration.exe
+F:\Regex\Regex-UserRegistration\Regex-UserRegistration\obj\Debug\Regex-UserRegistration.pdb
