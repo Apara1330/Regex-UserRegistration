@@ -16,6 +16,7 @@ namespace Regex_UserRegistration
         public const string PASSWORD = "^[a-z]{8}";
         public const string PASSWORD_RULE2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
         public const string PASSWORD_RULE3 = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        public const string PASSWORD_RULE4 = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$";
 
 
         public void ValidateFirstName(string firstName)
@@ -113,6 +114,19 @@ namespace Regex_UserRegistration
                 Console.WriteLine("Password does not match with pattern");
             }
 
+        }
+        public void ValidatePassword4(string password4)
+        {
+            Regex regex = new Regex(PASSWORD_RULE4);
+
+            if (regex.IsMatch(password4))
+            {
+                Console.WriteLine("Password is matching with the pattern");
+            }
+            else
+            {
+                Console.WriteLine("Password does not match with the pattern");
+            }
         }
 
     }
