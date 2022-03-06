@@ -14,6 +14,7 @@ namespace Regex_UserRegistration
         public const string Email = "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}";//email pattern
         public const string Mobile = "^([9][1])+[ ]+[6789]{1}[0-9]{9}$";
         public const string PASSWORD = "^[a-z]{8}";
+        public const string PASSWORD_RULE2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
 
 
         public void ValidateFirstName(string firstName)
@@ -82,6 +83,19 @@ namespace Regex_UserRegistration
             else
             {
                 Console.WriteLine("Password does not match with the pattern");
+            }
+        }
+        public void ValidatePassword2(string password2)
+        {
+            Regex regex = new Regex(PASSWORD_RULE2);
+
+            if (regex.IsMatch(password2))
+            {
+                Console.WriteLine("Password is matching the pattern");
+            }
+            else
+            {
+                Console.WriteLine("Password is not matching the pattern");
             }
         }
     }

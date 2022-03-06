@@ -29,9 +29,13 @@ namespace Regex_UserRegistration
             string mnum = Console.ReadLine();
             validateUserRegistration.ValidateMobile(mnum);*/
 
-            Console.WriteLine("Enter Password: ");
+            /*Console.WriteLine("Enter Password: ");
             string password = Console.ReadLine();
-            validateUserRegistration.ValidatePassword(password);
+            validateUserRegistration.ValidatePassword(password);*/
+
+            Console.WriteLine("Enter password with atleast one upper case: ");
+            string password2 = Console.ReadLine();
+            validateUserRegistration.ValidatePassword2(password2);
             Console.ReadLine();
         }
     }
