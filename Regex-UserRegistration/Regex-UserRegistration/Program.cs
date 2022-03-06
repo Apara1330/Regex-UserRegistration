@@ -33,9 +33,13 @@ namespace Regex_UserRegistration
             string password = Console.ReadLine();
             validateUserRegistration.ValidatePassword(password);*/
 
-            Console.WriteLine("Enter password with atleast one upper case: ");
+            /*Console.WriteLine("Enter password with atleast one upper case: ");
             string password2 = Console.ReadLine();
-            validateUserRegistration.ValidatePassword2(password2);
+            validateUserRegistration.ValidatePassword2(password2);*/
+
+            Console.WriteLine("Enter password with atleast one numeric number: ");
+            string password3 = Console.ReadLine();  
+            validateUserRegistration.ValidaePassword3(password3);
             Console.ReadLine();
         }
     }
