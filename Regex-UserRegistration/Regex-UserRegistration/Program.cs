@@ -20,14 +20,18 @@ namespace Regex_UserRegistration
             string lastName = Console.ReadLine();
             validateUserRegistration.ValidateLastName(lastName);*/
 
-           /* Console.WriteLine("Enter valid EmailId");
-            string mail = Console.ReadLine();
-            validateUserRegistration.ValidateEmail(mail);*/
-            
+            /* Console.WriteLine("Enter valid EmailId");
+             string mail = Console.ReadLine();
+             validateUserRegistration.ValidateEmail(mail);*/
 
-            Console.WriteLine("Enter mobile number");
+
+            /*Console.WriteLine("Enter mobile number");
             string mnum = Console.ReadLine();
-            validateUserRegistration.ValidateMobile(mnum);
+            validateUserRegistration.ValidateMobile(mnum);*/
+
+            Console.WriteLine("Enter Password: ");
+            string password = Console.ReadLine();
+            validateUserRegistration.ValidatePassword(password);
             Console.ReadLine();
         }
     }
